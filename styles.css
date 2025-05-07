@@ -89,7 +89,7 @@ body{
   min-height: 100vh;
   background: var(--image-background-mobile) no-repeat 0 0,
               var(--color-background-body);
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 
@@ -451,6 +451,7 @@ input[type="radio"]{
 
 .li-question label span:nth-of-type(1){
   max-width: 25rem;
+  width: 80%;
 }
 
 span.icon-result{
@@ -563,10 +564,10 @@ span.icon-result{
 
 @media screen and (min-width: 90rem){
 
-
   body{
     background: var(--image-background-desktop) no-repeat 0 0 / cover,
                 var(--color-background-body);
+    overflow: hidden;
   }
 
 

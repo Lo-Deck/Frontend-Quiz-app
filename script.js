@@ -216,19 +216,21 @@ document.querySelector('.button-submit').addEventListener('click', () => {
             setTimeout(() => {
 
                 const elementStyle = window.getComputedStyle(document.querySelectorAll('.container-li-quizz .li-question .icon-result')[indexDisplayGoodResponse]).getPropertyValue('background');
-                
-                if (elementStyle === 'none') {
+
+                if( elementStyle === 'none' || elementStyle === 'rgba(0, 0, 0, 0)' || elementStyle.includes('none') ) {
+
                     document.querySelectorAll('.container-li-quizz .li-question .icon-result')[indexDisplayGoodResponse].style.background = `url('./assets/images/icon-correct.svg') no-repeat center / 130%`;
 
-                    window.getComputedStyle(document.querySelectorAll('.container-li-quizz .li-question .icon-result')[indexDisplayGoodResponse]).offsetHeight;
                 }
-
 
 
             }, 1000);
 
 
+
             setTimeout(() => {
+
+
 
                 indexQuestion++;
 
