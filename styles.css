@@ -270,7 +270,6 @@ a{
   display: inline-block;
   width: 200%;
   height: 200%;
-  background: linear-gradient( 0deg, transparent, transparent 30%, rgba(93, 52, 242, 0.8));
   position: absolute;
     top: -50%; left: -25%;
   z-index: -1;
@@ -282,13 +281,14 @@ a{
 
 .list-questions .li-question a:hover::before{
   opacity: 1;
+  background: linear-gradient( 0deg, transparent, transparent 30%, rgba(93, 52, 242, 0.8));
   transform: rotate(-45deg) translateY(115%);
   z-index: -1;
 }
 
 .list-questions .li-question a:focus{
   outline: 0.2rem solid rgb(93, 52, 242); 
-  outline-offset: -0.2rem; 
+  outline-offset: -0.2rem;
   border-radius: clamp(0.25rem, -0.4656rem + 3.0534vw, 1rem);
 }
 
