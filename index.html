@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Exercise Frontend Mentor, Frontend quiz app">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+      <link href="styles.css" rel="stylesheet" type="text/css">
+      <title>Frontend Mentor | Frontend quiz app</title>
+    </head>
+    <body data-theme="light">
+
+
+      <main class="main-container">
+
+
+        <div class="container-light-dark">
+          <div class="container-quizz-title">
+            <h2 class="quizz-title text-rubik-medium"><div class="container-icon"><img class="" src="./assets/images/icon-accessibility.svg" alt="access"></div><span>Accessibility</span></h2>
+          </div>
+          <div class="container-switch">
+            <img class="icon-mode" src="./assets/images/icon-sun-dark.svg" alt="">
+            <button class="button button-switch focusable-input" id="switch-mode"><span class="switch"></span></button>
+            <img class="icon-mode" src="./assets/images/icon-moon-dark.svg" alt="">            
+          </div>
+        </div>
+
+
+        <section class="container-text">
+          <h1 class="main-title"><span class="text-rubik-light">Welcome to the</span> 
+                                <span class="text-rubik-medium">Frontend Quiz!</span>
+                                <span class="text-rubik-italic">Pick a subject to get started.</span></h1>    
+          <div class="container-quizz">
+            <h3 class="question-title text-rubik-italic">Question <span>6</span> of 10</h3>
+            <p class="text text-rubik-medium">Which of these color contrast ratios defines the minimum WCAG 2.1 Level AA requirement for normal text?</p>
+            <div class="container-progress-bar">
+              <div class="progress-bar"></div>
+            </div>    
+          </div>
+          <div class="result-text">
+            <p><span class="text-rubik-light">Quiz completed</span><span class="text-rubik-medium">You scored...</span></p>          
+          </div>
+        </section>
+
+
+        <div class="list list-questions text-rubik-medium">
+        
+
+          <ul class="list container-li-questions">
+            <li class="li-question"><a href="#HTML" class="focusable-input"><div class="container-icon-li"><img class="" src="./assets/images/icon-html.svg" alt="html" ></div><span>HTML</span></a></li>
+            <li class="li-question"><a href="#CSS" class="focusable-input"><div class="container-icon-li"><img class="" src="./assets/images/icon-css.svg" alt="css"></div><span>CSS</span></a></li>
+            <li class="li-question"><a href="#JavaScript" class="focusable-input"><div class="container-icon-li"><img class="" src="./assets/images/icon-js.svg" alt="js"></div><span>JavaScript</span></a></li>
+            <li class="li-question"><a href="#Accessibility" class="focusable-input"><div class="container-icon-li"><img class="" src="./assets/images/icon-accessibility.svg" alt="access"></div><span>Accessibility</span></a></li>
+          </ul>  
+
+
+          <ul class="list container-li-quizz">
+
+            <li class="li-question"> 
+              <label for="question1" class="focusable-input" tabindex="0">
+                <input type="radio" id="question1" name="question" value="">
+                <div class="container-icon-quizz">A</div>
+                <span>4.5 : 1</span>
+                <span class="icon-result"></span>
+              </label>
+            </li>
+
+            <li class="li-question">
+              <label for="question2" class="focusable-input" tabindex="0">
+                <input type="radio" id="question2" name="question" value=""> 
+                <div class="container-icon-quizz">B</div>
+                <span>3 : 1</span>
+                <span class="icon-result"></span>
+              </label>
+            </li>
+
+            <li class="li-question">
+              <label for="question3" class="focusable-input" tabindex="0">
+                <input type="radio" id="question3" name="question" value="">
+                <div class="container-icon-quizz">C</div>
+                <span>2.5 : 1</span>
+                <span class="icon-result"></span>
+              </label>
+            </li>
+
+            <li class="li-question">
+              <label for="question4" class="focusable-input" tabindex="0">
+                <input type="radio" id="question4" name="question" value="">
+                <div class="container-icon-quizz">D</div>
+                <span>5 : 1</span>
+                <span class="icon-result"></span>
+              </label>
+            </li>
+
+            <li class="li-question"><button class="button button-submit focusable-input">Submit Answer</button></li>   
+
+            <li class="messError"><span></span>Please select an answer</li>
+
+          </ul>
+
+
+
+          <section class="section-result">
+
+            <div class="container-result-text">
+              <h2 class="quizz-title text-rubik-medium"><div class="container-icon"><img class="" src="./assets/images/icon-accessibility.svg" alt="access"></div><span>Accessibility</span></h2>
+              <p class="text"><span class="text-rubik-medium">8</span><span class="text-rubik-medium">out of 10</span></p>     
+            </div>
+
+            <button class="button button-play text-rubik-medium">Play Again</button>
+
+          </section>
+
+        </div>
+
+      </main>
+
+
+
+    <script src="./script.js"></script>
+
+    </body>
+</html>
