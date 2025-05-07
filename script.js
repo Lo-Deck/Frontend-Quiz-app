@@ -100,10 +100,7 @@ document.querySelectorAll('.container-li-questions .li-question').forEach((item)
 
             document.querySelector('.container-quizz-title').style.display = 'block';
 
-
             window.innerWidth >= 768 ? document.querySelector('.container-quizz').style.display = 'flex' : document.querySelector('.container-quizz').style.display = 'block';
-
-
 
             // document.querySelector('.container-quizz').style.display = 'flex';
             document.querySelector('.container-li-quizz').style.display = 'block';
@@ -222,7 +219,11 @@ document.querySelector('.button-submit').addEventListener('click', () => {
                 
                 if (elementStyle === 'none') {
                     document.querySelectorAll('.container-li-quizz .li-question .icon-result')[indexDisplayGoodResponse].style.background = `url('./assets/images/icon-correct.svg') no-repeat center / 130%`;
+
+                    window.getComputedStyle(document.querySelectorAll('.container-li-quizz .li-question .icon-result')[indexDisplayGoodResponse]).offsetHeight;
                 }
+
+
 
             }, 1000);
 
@@ -240,8 +241,6 @@ document.querySelector('.button-submit').addEventListener('click', () => {
                 arrayInput.forEach( item => item.checked = false );
                 arrayInput.forEach( item => item.disabled = false );
 
-
-                console.log(arrayInput);
 
                 if(indexQuestion === array.questions.length){ //if last questions
 
