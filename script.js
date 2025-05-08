@@ -117,7 +117,11 @@ document.querySelectorAll('.container-li-questions .li-question').forEach((item)
 
                     array = data.quizzes[i];
 
-                    document.querySelector('.quizz-title').innerHTML = `<div class="container-icon"><img class="" src="${array.icon}" alt="${array.title}"></div><span>${array.title}</span>`;            
+                    // document.querySelector('.quizz-title').innerHTML = `<div class="container-icon"><img class="" src="${array.icon}" alt="${array.title}"></div><span>${array.title}</span>`;     
+                    document.querySelector('.quizz-title').innerHTML = `<a href=""><div class="container-icon"><img class="" src="${array.icon}" alt="${array.title}"></div><span>${array.title}</span></a>`;            
+                    
+                    
+
                     document.querySelector('.quizz-title .container-icon').style.background = `var(--color-icon-${array.title})`;
                     document.querySelector('.container-quizz .question-title span').textContent = `${indexQuestion+1}`;     
                     document.querySelector('.container-quizz .text').textContent = `${array.questions[indexQuestion].question}`;
@@ -390,6 +394,8 @@ window.onload = ( () => {
 });
 
 
+
+/* VOIR POUR SET BUTTON RETOUR MENU ET POUR RETOUR PAGE SUR MENU */
 
 
 

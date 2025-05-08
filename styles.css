@@ -357,7 +357,14 @@ label.focusable-input:focus{
   justify-self: start;
 }
 
-.quizz-title{
+/* .quizz-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(1.125rem, 0.5286rem + 2.5445vw, 1.75rem);
+} */
+
+.quizz-title a{
   display: flex;
   justify-content: center;
   align-items: center;
